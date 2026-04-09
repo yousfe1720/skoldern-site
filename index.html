@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKOLDERN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #ffffff;
+      color: #111111;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 32px 16px;
+      position: relative;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: clamp(32px, 6vw, 64px);
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: #111111;
+      margin-bottom: 56px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      color: #111111;
+      margin-bottom: 24px;
+    }
+
+    .line {
+      width: 78px;
+      height: 4px;
+      background: #17c9b2;
+      border-radius: 999px;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      letter-spacing: 0.35em;
+      color: #9b9b9b;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+    }
+
+    .email-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #d9d9d9;
+      padding: 18px 28px;
+      border-radius: 3px;
+      color: #666666;
+      font-size: 15px;
+      background: #ffffff;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      color: #b3b3b3;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .brand {
+        margin-bottom: 40px;
+      }
+
+      .subtitle {
+        letter-spacing: 0.22em;
+        line-height: 1.8;
+        padding: 0 8px;
+      }
+
+      .email-box {
+        padding: 16px 18px;
+        font-size: 14px;
+      }
+
+      .footer {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="brand">SKOLDERN</div>
+
+    <h1>COMING SOON</h1>
+    <div class="line"></div>
+
+    <div class="subtitle">SOMETHING GREAT IS ON ITS WAY</div>
+
+    <div class="email-box">
+      <span>✉</span>
+      <span>youssef_mohamed@skoldern.pl</span>
+    </div>
+  </div>
+
+  <div class="footer">© 2026 SKOLDERN — ALL RIGHTS RESERVED</div>
+</body>
+</html>
